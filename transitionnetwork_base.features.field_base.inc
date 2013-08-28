@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * transitionnetwork_base.features.field_base.inc
+ * tn_d7_feat_base.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function transitionnetwork_base_field_default_field_bases() {
+function tn_d7_feat_base_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_coordinates'
