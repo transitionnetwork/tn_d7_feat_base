@@ -1,4 +1,4 @@
-d7_base
-=======
+TN D7 Feature: Base
+===================
 
 A key set of modules and fields used by other Transition Network features.
