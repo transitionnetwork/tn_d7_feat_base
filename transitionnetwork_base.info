@@ -1,0 +1,12 @@
+name = Transition Network Base
+description = A key set of modules and fields used by other Transition Network features.
+core = 7.x
+package = Transition Network
+dependencies[] = addressfield
+dependencies[] = features
+dependencies[] = geofield
+dependencies[] = link
+features[features_api][] = api:2
+features[field_base][] = field_coordinates
+features[field_base][] = field_location
+features[field_base][] = field_website
