@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Transition Network Base feature.
  */
+
+include_once 'tn_d7_feat_base.features.inc';
