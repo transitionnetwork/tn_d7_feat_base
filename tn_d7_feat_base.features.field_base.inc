@@ -21,7 +21,10 @@ function tn_d7_feat_base_field_default_field_bases() {
     'indexes' => array(),
     'locked' => 0,
     'module' => 'geofield',
-    'settings' => array(),
+    'settings' => array(
+      'backend' => 'default',
+      'srid' => 4326,
+    ),
     'translatable' => 0,
     'type' => 'geofield',
   );
@@ -69,6 +72,49 @@ function tn_d7_feat_base_field_default_field_bases() {
     'type' => 'addressfield',
   );
 
+  // Exported field_base: 'field_primary_contact'
+  $field_bases['field_primary_contact'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_primary_contact',
+    'foreign keys' => array(
+      'users' => array(
+        'columns' => array(
+          'target_id' => 'uid',
+        ),
+        'table' => 'users',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'direction' => 'ASC',
+          'property' => 'name',
+          'type' => 'property',
+        ),
+        'target_bundles' => array(),
+      ),
+      'target_type' => 'user',
+    ),
+    'translatable' => 0,
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_summary'
   $field_bases['field_summary'] = array(
     'active' => 1,
@@ -91,11 +137,9 @@ function tn_d7_feat_base_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_website'
